@@ -19,6 +19,25 @@ evaluated on the Where's Waldo eye-tracking dataset.
 - Baseline comparisons
 - TSTR downstream evaluation
 
+## Pipeline
+
+The notebook follows a sequential pipeline. Run cells from top to bottom in order:
+
+| Step | Description |
+|------|-------------|
+| Step 1 | Imports, configuration, and seed setting |
+| Step 2 | Dataset loading and preprocessing (downsampling, normalisation, segmentation, augmentation) |
+| Step 3 | Diffusion schedule definition (DDPM noise schedule) |
+| Step 4 | Model architecture (U-Net1D with FiLM conditioning) |
+| Step 5 | Training (500 epochs, EMA, mixed precision) |
+| Step 6 | Generation via DDIM sampling |
+| Step 7 | Evaluation metrics (KS, JS, Wasserstein, FGD) |
+| Step 8 | Fixation and saccade analysis |
+| Step 9 | Ablation studies (ε vs x₀, EMA, DDIM steps, η) |
+| Step 10 | Baseline comparisons (Gaussian, Random, Markov) |
+| Step 11 | Spatial coverage evaluation |
+| Step 12 | TSTR downstream evaluation |
+
 ## Compute Environment
 This notebook was developed and executed on the **Simula Research Laboratory HPC cluster (ex3)**
 using an **NVIDIA A40 GPU**. Access to this cluster is restricted to authorised users.

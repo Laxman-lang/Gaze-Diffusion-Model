@@ -40,7 +40,7 @@ The notebook follows a sequential pipeline. Run cells from top to bottom in orde
 
 ## Compute Environment
 This notebook was developed and executed on the **Simula Research Laboratory HPC cluster (ex3)**
-using an **NVIDIA A40 GPU**. Access to this cluster is restricted to authorised users.
+using an **NVIDIA A40 GPU**.
 
 The notebook is provided for transparency and reproducibility of the thesis results.
 To run locally, a CUDA-capable GPU is recommended with the following dependencies:

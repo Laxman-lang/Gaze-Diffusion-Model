@@ -46,7 +46,10 @@ The notebook is provided for transparency and reproducibility of the thesis resu
 To run locally, a CUDA-capable GPU is recommended with the following dependencies:
 - Python 3.10+
 - PyTorch 2.5+
-- scipy, numpy, matplotlib
+- numpy
+- scipy
+- matplotlib
+- tqdm
 
 ## Note on Outputs
 Outputs shown in the notebook are from the original training run on ex3. The eye-tracking dataset is not included as it belongs to Mathema et al. and is not 
